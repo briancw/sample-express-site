@@ -1,0 +1,17 @@
+<%- include header.ejs %>
+
+<div class="container">
+
+	There should be a var here:
+	<% if( typeof(sample_var) != 'undefined' ){ %>
+		<%= sample_var %>
+	<% } %>
+	<br>
+
+	<a href="/login">Login</a>
+	<br>
+	<a href="">Auth protected page</a>
+
+</div>
+
+<%- include footer.ejs %>
